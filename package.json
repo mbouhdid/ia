@@ -8,10 +8,24 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@module-federation/nextjs-mf": "^8.1.10",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
+    "@mui/material-nextjs": "^5.15.9",
+    "@mui/x-data-grid": "^6.19.5",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "@rjsf/core": "^5.17.1",
+    "@rjsf/mui": "^5.17.1",
+    "@rjsf/utils": "^5.17.1",
+    "@rjsf/validator-ajv6": "^5.17.1",
+    "clsx": "^2.0.0",
     "prettier": "^3.2.5",
-    "turbo": "latest"
+    "turbo": "latest",
+    "zod": "^3.22.2"
   },
   "engines": {
     "node": ">=18"
@@ -20,5 +34,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@fontsource/inter": "^5.0.17",
+    "@mui/joy": "^5.0.0-beta.30"
+  }
 }
