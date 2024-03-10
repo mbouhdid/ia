@@ -1,16 +1,17 @@
 
-import { fetchPromptByName } from "@/app/lib/services/request-service/prompts-request-service";
-import Header from "@/app/ui/header";
-import PromptForm from "@/app/ui/prompt-form";
+
+
 import { Button } from "@mui/joy";
 
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-import { deletePrompt } from "@repo/request/prompt-request";
+import { deletePrompt, fetchPromptByName } from "@repo/request/prompt-request";
 import React, { useState } from "react";
 import Delete from "./delete";
 import CreatePrompt from "../../../components/create-prompt";
 import Update from "./update";
+import Header from "../../../../ui/header";
+import PromptForm from "../../../../ui/prompt-form";
 
 
 export default async function Page({ params }: { params: { id: string } }) {

@@ -6,7 +6,6 @@ import CreatePrompt from "./create-prompt";
 import React, { Suspense } from "react";
 import PromptList from "./prompt-list";
 import CreateRoundedIcon from '@mui/icons-material/CreateRounded';
-import { TableSkeleton } from "@/app/ui/skeletons";
 import { ListSkeleton } from "@repo/ui/skeletons";
 
 export default function SideNavPrompt({ params }: { params: { id: string } }) {

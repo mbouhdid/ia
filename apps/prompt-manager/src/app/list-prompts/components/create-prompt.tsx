@@ -8,11 +8,13 @@ import Textarea from '@mui/joy/Textarea';
 import Sheet from '@mui/joy/Sheet';
 import { Input, Stack, Typography } from '@mui/joy';
 
-import { createTemplate } from '@/app/lib/services/prompts-service';
+
 import { useFormState } from 'react-dom';
 import Toaster from '../../../../../../packages/ui/src/toaster';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { Prompt } from '@/app/lib/definitions/definitions';
+import { Prompt } from '../../lib/definitions/definitions';
+import { createTemplate } from '../../lib/services/prompts-service';
+
 
 interface CreatePromptProps {
     open?: boolean;

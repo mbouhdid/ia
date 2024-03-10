@@ -88,6 +88,6 @@ export async function deleteTemplate(prevState: State, id: string[]) {
     }
     const list = await fetchPromptsList();
     
-    revalidatePath(`/list-prompts/${list[0].name}/edit`);
-    redirect(`/list-prompts/${list[0].name}/edit`);
+    revalidatePath(`/list-prompts/${list[0]?.name}/edit`);
+    redirect(`/list-prompts/${list[0]?.name}/edit`);
 }
