@@ -3,8 +3,8 @@ import { Prompt } from './definitions/definitions';
 import { redirect } from "next/navigation";
 
 
-//const API_URL = 'https://protide.fr/raglab';
-const API_URL = 'http://localhost:3100/api';
+const API_URL = 'https://protide.fr/raglab';
+//const API_URL = 'http://localhost:3100/api';
 
 export async function fetchPromptsList(): Promise<Prompt[]> {
     noStore();
